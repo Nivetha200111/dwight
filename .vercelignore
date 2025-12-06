@@ -1,0 +1,46 @@
+# Vercel ignore file
+# Exclude unnecessary files from deployment
+
+# Python files (not needed for Unity WebGL)
+*.py
+__pycache__/
+*.pyc
+
+# Unity source files (only need the build)
+Assets/Scripts/
+Assets/Scenes/
+*.cs
+*.meta
+*.unity
+*.asset
+*.prefab
+
+# Documentation (optional - remove if you want docs on site)
+*.md
+!README.md
+
+# Editor files
+.vscode/
+.idea/
+*.sln
+*.csproj
+
+# Build artifacts (keep only WebGL build)
+Build/Windows/
+Build/Mac/
+Build/Linux/
+Build/Android/
+Build/iOS/
+
+# Keep only WebGL build
+# Build/WebGL/ is included
+
+# Git files
+.git/
+.gitignore
+
+# Other
+.DS_Store
+Thumbs.db
+*.log
+
